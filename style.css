@@ -17,5 +17,11 @@
         div{
             margin: 14vh 0;
         }
-       
+        pre{
+            margin: 12px 0px;
+            width: 12px;
+            /* border: 2px solid red; */
+            position: relative;
+            left: 43%;
+        }
     
