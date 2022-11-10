@@ -1,0 +1,21 @@
+
+        
+        body{
+            background-color: bisque;
+            text-align: center;
+            justify-content: center;
+        }
+        .btn{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 2px 9px;
+            border-radius: 9px;
+            border-style: none;
+            border: 1px solid black;
+        }
+        div{
+            margin: 14vh 0;
+        }
+       
+    
