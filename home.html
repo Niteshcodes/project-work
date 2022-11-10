@@ -5,28 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>home work</title>
-    <style>
-        
-        body{
-            background-color: bisque;
-            text-align: center;
-            justify-content: center;
-        }
-        .btn{
-            background-color: red;
-            color: white;
-            cursor: pointer;
-            padding: 2px 9px;
-            border-radius: 9px;
-            border-style: none;
-            border: 1px solid black;
-        }
-        div{
-            margin: 14vh 0;
-        }
-       
-    </style>
+    
 </head>
 
 <body>
@@ -59,59 +40,9 @@
 
         </pre>
     </div>
-    <script>
-
-        function btn() {
-            let a = document.getElementById("btn");
-            let b = document.getElementById("time");
-            if (b.style.display != "block") {
-                b.style.display = "block"
-                setInterval(() => {
-                    let a = new Date();
-                    document.getElementById('time').innerHTML = "❣ " + a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds() + " ❤ " + a.toLocaleDateString(undefined, { weekday: 'long' }) + "❣";
-
-                }, 1000);
-            }
-            else {
-                b.style.display = "none"
-                console.log("clicked2")
-            }
-
-        }
-        function btn2() {
-            let al = Number(prompt("enter a number"));
-            let bd = 1;
-            for (let i = 1; i <= al; i++) {
-                bd *= i;
-            }
-            document.getElementById("fact").innerHTML = "factorial of " + al + " = " + bd;
-
-
-        }
-        function pat() {
-            
-
-            let n = Number(prompt("enter your number"));
-            let string = "";
-            
-            for (let i = 1; i <= n; i++) 
-            {
-                
-                for (let j = 1; j <= n - i; j++) {
-                    string += " ";
-                }
-               
-                for (let k = 0; k < 2 * i - 1; k++) {
-                    string += "*";
-                }
-                string += "\n";
-            }
-            document.getElementById("pattern").innerHTML=string;
-
-        }
-
-
-    </script>
+    <script src="code.js"></script>
+   
+   
 </body>
 
 </html>
